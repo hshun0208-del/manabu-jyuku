@@ -1,2 +1,0 @@
-# manabu-jyuku
-Educational Platform 
