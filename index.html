@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>まなぶ塾 | 無料の分野別・資格試験対策アプリシリーズ</title>
+<meta name="description" content="歴史能力検定・各種資格試験の対策にそのまま使える、無料の一問一答学習アプリシリーズ「まなぶ塾」。SM-2復習アルゴリズムで効率よく暗記できます。">
+<meta name="theme-color" content="#F6F1E4">
+<link rel="icon" href="icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="まなぶ塾 | 無料の分野別・資格試験対策アプリシリーズ">
+<meta property="og:description" content="歴史能力検定・各種資格試験の対策にそのまま使える、無料の一問一答学習アプリシリーズ「まなぶ塾」。">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="https://example.com/icon-512.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8599497098364919" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6F1E4;
+    --bg-elevated: #FFFDF7;
+    --ink: #2A241B;
+    --ink-soft: #6E6656;
+    --accent: #B23A2E;
+    --accent-ink: #FFFDF7;
+    --indigo: #2C4356;
+    --line: #DFD5BC;
+    --line-strong: #C7B99A;
+    --radius: 4px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1B1712;
+      --bg-elevated: #26211A;
+      --ink: #EDE6D6;
+      --ink-soft: #A79A7F;
+      --accent: #E06A57;
+      --accent-ink: #1B1712;
+      --indigo: #7FA2BE;
+      --line: #3B3428;
+      --line-strong: #4C4331;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, sans-serif;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  h1, h2, .serif { font-family: "Noto Serif JP", serif; font-weight: 700; margin: 0; }
+  a { text-decoration: none; color: inherit; }
+
+  #app { max-width: 640px; margin: 0 auto; padding: 32px 20px 60px; }
+
+  .top { text-align: center; margin-bottom: 8px; }
+  .top .mark {
+    display: inline-block; width: 11px; height: 11px;
+    background: var(--accent); transform: rotate(45deg); margin-bottom: 14px;
+  }
+  .top h1 { font-size: 22px; letter-spacing: 0.02em; }
+  .top p { color: var(--ink-soft); font-size: 13px; margin-top: 8px; line-height: 1.7; }
+
+  .cards { margin-top: 32px; display: flex; flex-direction: column; gap: 14px; }
+
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px;
+  }
+  .card img { width: 64px; height: 64px; border-radius: 12px; flex-shrink: 0; display: block; }
+  .card-body { flex: 1; min-width: 0; }
+  .card-title { font-family: "Noto Serif JP", serif; font-size: 16px; font-weight: 700; }
+  .card-sub { font-size: 12.5px; color: var(--ink-soft); margin-top: 4px; line-height: 1.6; }
+  .card-cta {
+    flex-shrink: 0;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: var(--radius);
+    white-space: nowrap;
+  }
+
+  .card.placeholder { opacity: 0.55; }
+  .card.placeholder .card-cta {
+    background: none;
+    border: 1px solid var(--line-strong);
+    color: var(--ink-soft);
+  }
+  .card.placeholder .icon-ph {
+    width: 64px; height: 64px; border-radius: 12px; flex-shrink: 0;
+    background: var(--line);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; color: var(--bg-elevated);
+  }
+
+  footer { margin-top: 44px; text-align: center; font-size: 11.5px; color: var(--ink-soft); line-height: 1.8; }
+  footer a { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <div class="top">
+    <span class="mark"></span>
+    <h1>まなぶ塾</h1>
+    <p>資格試験・検定の範囲を網羅した、無料の一問一答学習アプリシリーズ「まなぶ塾」です。<br>
+      SM-2復習アルゴリズムで、忘れかけた頃に自動で復習問題が出題されます。</p>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="./nihonshi/">
+      <img src="nihonshi/icon-192.png" alt="一問一答 日本史">
+      <div class="card-body">
+        <div class="card-title">一問一答 日本史</div>
+        <div class="card-sub">歴史能力検定2級対応・全19分野1250問</div>
+      </div>
+      <div class="card-cta">はじめる</div>
+    </a>
+
+    <a class="card" href="./aws-saa/">
+      <img src="aws-saa/icon-192.png" alt="一問一答 AWS SAA">
+      <div class="card-body">
+        <div class="card-title">一問一答 AWS SAA</div>
+        <div class="card-sub">AWS認定ソリューションアーキテクト – アソシエイト対応・900問</div>
+      </div>
+      <div class="card-cta">はじめる</div>
+    </a>
+
+    <!--
+      新しい分野を追加したら、上の <a class="card"> ブロックをコピーして
+      ここに追加してください（手順は README.md 参照）。
+    -->
+    <div class="card placeholder">
+      <div class="icon-ph">？</div>
+      <div class="card-body">
+        <div class="card-title">次の分野、準備中</div>
+        <div class="card-sub">FP・証券アナリスト・観光系などを順次追加予定</div>
+      </div>
+      <div class="card-cta">近日公開</div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 まなぶ塾 ・ <a href="mailto:example@example.com">お問い合わせ</a>
+  </footer>
+
+</div>
+</body>
+</html>
