@@ -1,0 +1,16 @@
+{
+  "name": "一問一答 宅建士",
+  "short_name": "宅建士一問一答",
+  "description": "宅地建物取引士試験対応、SM-2復習アルゴリズム搭載の一問一答アプリ",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F6F1E4",
+  "theme_color": "#F6F1E4",
+  "lang": "ja",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
